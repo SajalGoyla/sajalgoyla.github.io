@@ -1,0 +1,211 @@
+.education-section {
+  padding: 100px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: "Geist Mono", monospace;
+  color: #14b8a6;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.education-container h2 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.education-container h2 span {
+  color: #14b8a6;
+  font-weight: 600;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.education-card {
+  background-color: #111827;
+  /* Dark slate */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.edu-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.edu-icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.columbia-icon {
+  color: #a8b1ff;
+}
+
+.iit-icon {
+  color: #d1d5db;
+}
+
+.edu-title-block h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.edu-loc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.edu-badge {
+  border: 1px solid #14b8a6;
+  color: #14b8a6;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgba(20, 184, 166, 0.1);
+}
+
+.edu-card-middle {
+  margin-bottom: 40px;
+}
+
+.edu-card-middle h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f3f4f6;
+}
+
+.edu-dates {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.edu-gpa-container {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.gpa-label {
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gpa-score {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fbbf24;
+  /* yellow/gold */
+}
+
+.gpa-score span {
+  font-size: 24px;
+}
+
+.edu-minor {
+  font-size: 14px;
+  color: #6b7280;
+  margin-left: 10px;
+}
+
+.edu-card-bottom {
+  margin-top: auto;
+}
+
+.courses-label {
+  font-size: 12px;
+  color: #6b7280;
+  letter-spacing: 2px;
+  margin: 0 0 15px 0;
+}
+
+.edu-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-tag {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.course-tag:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education-card {
+    padding: 25px;
+  }
+
+  .edu-title-block h3 {
+    font-size: 20px;
+  }
+
+  .gpa-score {
+    font-size: 24px;
+  }
+}
