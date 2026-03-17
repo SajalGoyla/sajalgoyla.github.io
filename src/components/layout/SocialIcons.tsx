@@ -6,6 +6,7 @@ import "../../styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "../ui/HoverLinks";
+import resumePDF from "../../assets/Sajal_Kumar_Goyla_resume.pdf";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -68,7 +69,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="/assets/Sajal_Kumar_Goyla_resume.pdf" download="Sajal_Kumar_Goyla_resume.pdf">
+      <a className="resume-button" href={resumePDF} download="Sajal_Kumar_Goyla_resume.pdf">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
